@@ -1,0 +1,165 @@
+<!DOCTYPE html> <!--Formato para dar a conocer al navegador de que es un documento html-->
+
+<html lang="es"> <!--El idioma que tiene la página que es en español-->
+    <!--Encabezado con tags de metadatos para informacion al navegador y informacion importante a mostrar-->
+    <header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera página en HTML</title>
+    <br/>
+    <h1>Pierina Nayely Romero Laje</h1>
+    <p>"No cambies tu esencia para tener una aprobación"</p>
+    <img src="Avatar 1.png" alt="Avatar de la autora">
+    </header>
+
+<body> 
+<!--Cuerpo de la página web a mostrar-->
+<nav> <!--Etiqueta donde muestran los temas/secciones de la página-->
+    <br/>
+      <ul>
+         <li><a href="#Sobre mí">Sobre mí</a></li>
+         <li><a href="#Tabla de Habilidades">Tabla de Habilidades</a></li>
+         <li><a href="#Lista de Intereses">Lista de Intereses</a></li>
+         <li><a href="#Multimedia">Multimedia</a></il>
+         <li><a href="#Formulario de contacto">Formulario de contacto</a></li>
+         <li><a href="#Pie de página">Redes sociales</a></li>
+      </ul> 
+    <br/> 
+</nav>
+<!--Sección denominado "Sobre mí" aquí hablo un poco de mi persona-->
+<section id="sobremí"> 
+    <h2>Sobre mí:</h2>
+<p> Hola, soy <strong>Pierina Romero Laje</strong> tengo 19 años, soy de la ciudad de Babahoyo, Los Ríos, Ecuador. 
+Actualmente soy estudiante de 3er semestre en la carrera de <strong>Ingeniería en Sistemas de Información</strong> en la <mark>Universidad Técnica de Babahoyo (UTB)</mark>. Soy hija única, vivo con mi mamá, abuelo y abuela
+, tío, prima y primo maternos. Me <em>gusta</em> el color verde mente, lila, celeste y el negro, la música de muchos géneros como pop, jazz, kpop, R&B o soul,etc. Mis <em>hobbies</em> son tejer a crochet, pintar mandalas, armar rompecabezas, leer libros, ver series y peliculas.
+Me <em>interesan</em> los idiomas mis favoritos son: inglés (acento británico), italiano y portugués. También me <em>interesa</em> áreas como: la tecnología y la neurociencia.</p>
+</section> 
+<!--Lista no ordenada de INTERESES-->
+<section id="intereses"> 
+    <h2>Lista de intereses:</h2> 
+<ul style="list-style-type: circle;"> <!--Estructurar la lista no ordenada con viñetas de circulo--> 
+    <li>Lectura</li>
+    <li>Tejido</li>
+    <li>Música</li>
+    <li>Ciencia</li>
+    <li>Tecnología</li>
+    <li>Colección</li>
+</ul>
+</section>
+<!--Tabla de habilidades donde se indicarán mis habilidades de manera estructurada-->
+<section id="tabladeHabilidades">
+<table>
+<caption><h2>Habilidades</h2></caption>
+    <thead>
+        <tr>
+            <th scope= "col">Habilidad</th>
+            <th scope= "col">Categoría</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Empatía</td>   
+            <td>Social</td>
+        </tr>
+        <tr>
+            <td>Curiosidad intelectual</td>
+            <td>Personal</td>
+        </tr>
+        <tr>
+            <td>Trabajo en equipo</td>
+            <td>Profesional</td>
+        </tr>
+        <tr>
+            <td>Paciencia</td>
+            <td>Emocional</td>
+        </tr>
+        <tr>
+            <td>Adaptabilidad</td>
+            <td>Profesional</td>
+        </tr>
+        <tr>
+            <td>Responsabilidad</td>
+            <td>Personal</td>
+        </tr>
+    </tbody> 
+    <br/>
+    <tfoot>
+        <tr>
+            <th scope="row">Fin</th>
+        </tr>
+    </tfoot>
+</table>
+</section>
+
+ <!--Multimedia ya sea audio o video-->
+<section id="multimedia">
+<h2>Video de presentación</h2>
+<video width="50%" controls poster="miniaturaimg.png">
+<source src="video-personal-2.mp4" type="Video/mp4">
+Tu navegador no soporta reproducción de video
+</video>
+</section>
+
+<!--Formulario de contactos para los usuarios-->
+<section id="formulario">
+    <h2>Formulario de contacto</h2>
+<form>
+    <fieldset>
+        <legend>Registre sus datos</legend>
+        <!--Nombre del usuario-->
+        <label for="nombre">Nombre completo: </label> 
+        <input type="text" id="nombre" name="nombre" minlength="4" maxlength="40" required>
+        <br/>
+        <!--El correo personal-->
+        <label for="email">Correo electrónico: </label> 
+        <input type="email" id="email" name="email" required>
+        <br/>
+        <!--Ingresar su edad-->
+        <label for="edad">Edad: </label> 
+        <input type="number" id="edad" name="edad" min="1" max="100" required>
+        <br/>
+        <!--Marcar su género-->
+        <p>Género:</p>
+        <input type="radio" id="femenino" name="genero" value="F" required>
+        <label for="femenino"> Femenino </label>
+        <input type="radio" id="masculino" name="genero" value="M">
+        <label for="masculino"> Masculino </label> 
+        <input type="radio" id="no" name="genero" value="Prefiero no decirlo">
+        <label for="no">Prefiero no decirlo</label>
+        <br/>
+        <!--Marcar intereses o gustos-->
+        <p>Intereses:</p> 
+        <input type="checkbox" id="lectura" name="lectura">
+        <label for="lectura"> Lectura </label>
+        <input type="checkbox" id="deportes" name="deportes">
+        <label for="deportes"> Deportes </label>
+        <input type="checkbox" id="videojuegos" name="videojuegos">
+        <label for="videojuegos"> Videojuegos </label>
+        <input type="checkbox" id="cine" name="cine">
+        <label for="cine"> Cine </label>
+        <input type="checkbox" id="música" name="música">
+        <label for="música"> Música </label> <br/>
+
+        <!--Algún comentario que desee enviar-->
+        <label for="comentarios"> Comentario: </label><br/>
+        <textarea id="comentarios" name="comentarios" rows="5" cols="40">Deja tu comentario aquí...</textarea><br/>
+        <button type="submit"> Enviar</button><!--Enviar el form-->
+    </fieldset>
+</form> <!--Termina el formulario de contacto-->
+</section>
+
+<!--Con un footer se agregar datos de contacto de la creadora-->
+<footer>
+    <p>Pierina Nayely Romero Laje - Portafolio web</p>
+    <p>© 2025. Todos los derechos reservados<p> <!--Año actual con los derechos como autora-->
+        <address>
+            Redes sociales: 
+            <br/>
+            <a href="https://www.instagram.com/pieriii_lj?igsh=MnhkbndoNHllY2xk" target="blank"> Instagram</a>
+            <br/>
+            <a href="https://github.com/PieriRL" target="blank"> GitHub </a> 
+
+        </address>
+</footer>
+</body>
+</html>
